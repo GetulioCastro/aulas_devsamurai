@@ -1,0 +1,16 @@
+var listaConvidados = [];
+
+while(true) {
+    var nome = prompt('Digite o nome do convidado ou S para sair:');
+    var idade = prompt('Digite a idade do convidado:');
+    var cpf = prompt('Digite o cpf do convidado:');
+
+    if(nome == 'S' || nome == 's') {
+        break;
+    } else {
+        listaConvidados.push({nome: nome, idade: idade, cpf: cpf});
+    }
+        
+}
+
+console.log(listaConvidados);
