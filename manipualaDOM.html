@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Olá Mundo, esta é minha primeira manipulação do DOM.</h1>
+
+
+    <script type="application/javascript">
+        var obj = document.getElementById("titulo");
+        var texto = obj.innerText;
+        console.log(texto);
+        obj.innerText = "Minha segunda manipulação do DOM";
+        obj.style.color = "#ff0000";
+    </script>
+    
+</body>
+</html>
